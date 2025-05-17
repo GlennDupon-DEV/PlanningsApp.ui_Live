@@ -1,6 +1,6 @@
 using System;
 
-namespace PlanningsApp.Ui.Models;
+namespace PlanningsApp.UI.Models;
 
 public class OidcSettings
 {

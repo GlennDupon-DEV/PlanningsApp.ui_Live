@@ -1,7 +1,7 @@
-using PlanningsApp.Ui.Models;
-using PlanningsApp.Ui.Models.PlanningModels;
+using PlanningsApp.UI.Models;
+using PlanningsApp.UI.Models.PlanningModels;
 
-namespace PlanningsApp.Ui.Services.Interfaces;
+namespace PlanningsApp.UI.Services.Interfaces;
 
 public interface ILineService
 {

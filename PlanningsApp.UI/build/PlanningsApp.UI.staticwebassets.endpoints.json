@@ -3,8 +3,8 @@
   "ManifestType": "Publish",
   "Endpoints": [
     {
-      "Route": "PlanningsApp.Ui.gudoyvbpg8.styles.css",
-      "AssetFile": "PlanningsApp.Ui.styles.css.gz",
+      "Route": "PlanningsApp.UI.gudoyvbpg8.styles.css",
+      "AssetFile": "PlanningsApp.UI.styles.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -61,13 +61,13 @@
         },
         {
           "Name": "label",
-          "Value": "PlanningsApp.Ui.styles.css"
+          "Value": "PlanningsApp.UI.styles.css"
         }
       ]
     },
     {
-      "Route": "PlanningsApp.Ui.gudoyvbpg8.styles.css",
-      "AssetFile": "PlanningsApp.Ui.styles.css.br",
+      "Route": "PlanningsApp.UI.gudoyvbpg8.styles.css",
+      "AssetFile": "PlanningsApp.UI.styles.css.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -124,13 +124,13 @@
         },
         {
           "Name": "label",
-          "Value": "PlanningsApp.Ui.styles.css"
+          "Value": "PlanningsApp.UI.styles.css"
         }
       ]
     },
     {
-      "Route": "PlanningsApp.Ui.gudoyvbpg8.styles.css",
-      "AssetFile": "PlanningsApp.Ui.styles.css",
+      "Route": "PlanningsApp.UI.gudoyvbpg8.styles.css",
+      "AssetFile": "PlanningsApp.UI.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -169,13 +169,13 @@
         },
         {
           "Name": "label",
-          "Value": "PlanningsApp.Ui.styles.css"
+          "Value": "PlanningsApp.UI.styles.css"
         }
       ]
     },
     {
-      "Route": "PlanningsApp.Ui.gudoyvbpg8.styles.css.br",
-      "AssetFile": "PlanningsApp.Ui.styles.css.br",
+      "Route": "PlanningsApp.UI.gudoyvbpg8.styles.css.br",
+      "AssetFile": "PlanningsApp.UI.styles.css.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -222,13 +222,13 @@
         },
         {
           "Name": "label",
-          "Value": "PlanningsApp.Ui.styles.css.br"
+          "Value": "PlanningsApp.UI.styles.css.br"
         }
       ]
     },
     {
-      "Route": "PlanningsApp.Ui.gudoyvbpg8.styles.css.gz",
-      "AssetFile": "PlanningsApp.Ui.styles.css.gz",
+      "Route": "PlanningsApp.UI.gudoyvbpg8.styles.css.gz",
+      "AssetFile": "PlanningsApp.UI.styles.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -275,13 +275,13 @@
         },
         {
           "Name": "label",
-          "Value": "PlanningsApp.Ui.styles.css.gz"
+          "Value": "PlanningsApp.UI.styles.css.gz"
         }
       ]
     },
     {
-      "Route": "PlanningsApp.Ui.styles.css",
-      "AssetFile": "PlanningsApp.Ui.styles.css.gz",
+      "Route": "PlanningsApp.UI.styles.css",
+      "AssetFile": "PlanningsApp.UI.styles.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -335,8 +335,8 @@
       ]
     },
     {
-      "Route": "PlanningsApp.Ui.styles.css",
-      "AssetFile": "PlanningsApp.Ui.styles.css.br",
+      "Route": "PlanningsApp.UI.styles.css",
+      "AssetFile": "PlanningsApp.UI.styles.css.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -390,8 +390,8 @@
       ]
     },
     {
-      "Route": "PlanningsApp.Ui.styles.css",
-      "AssetFile": "PlanningsApp.Ui.styles.css",
+      "Route": "PlanningsApp.UI.styles.css",
+      "AssetFile": "PlanningsApp.UI.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -427,8 +427,8 @@
       ]
     },
     {
-      "Route": "PlanningsApp.Ui.styles.css.br",
-      "AssetFile": "PlanningsApp.Ui.styles.css.br",
+      "Route": "PlanningsApp.UI.styles.css.br",
+      "AssetFile": "PlanningsApp.UI.styles.css.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -472,8 +472,8 @@
       ]
     },
     {
-      "Route": "PlanningsApp.Ui.styles.css.gz",
-      "AssetFile": "PlanningsApp.Ui.styles.css.gz",
+      "Route": "PlanningsApp.UI.styles.css.gz",
+      "AssetFile": "PlanningsApp.UI.styles.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11120,7 +11120,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi=\""
+          "Value": "W/\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI=\""
         },
         {
           "Name": "Last-Modified",
@@ -11134,7 +11134,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi="
+          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI="
         }
       ]
     },
@@ -11175,7 +11175,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi=\""
+          "Value": "W/\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI=\""
         },
         {
           "Name": "Last-Modified",
@@ -11189,7 +11189,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi="
+          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI="
         }
       ]
     },
@@ -11216,7 +11216,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi=\""
+          "Value": "\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI=\""
         },
         {
           "Name": "Last-Modified",
@@ -11226,7 +11226,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi="
+          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI="
         }
       ]
     },
@@ -11357,7 +11357,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi=\""
+          "Value": "W/\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI=\""
         },
         {
           "Name": "Last-Modified",
@@ -11375,7 +11375,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi="
+          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI="
         },
         {
           "Name": "label",
@@ -11420,7 +11420,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi=\""
+          "Value": "W/\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI=\""
         },
         {
           "Name": "Last-Modified",
@@ -11438,7 +11438,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi="
+          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI="
         },
         {
           "Name": "label",
@@ -11469,7 +11469,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi=\""
+          "Value": "\"IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI=\""
         },
         {
           "Name": "Last-Modified",
@@ -11483,7 +11483,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUi="
+          "Value": "sha256-IdjKKgivYaKuAlLKFzu5FfxcEz/JcMIl79l+wePbQUI="
         },
         {
           "Name": "label",
@@ -14682,13 +14682,13 @@
       ]
     },
     {
-      "Route": "_framework/PlanningsApp.Ui.janmqyedq2.wasm",
-      "AssetFile": "_framework/PlanningsApp.Ui.janmqyedq2.wasm.br",
+      "Route": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm",
+      "AssetFile": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.000023637309"
+          "Quality": "0.000023755790"
         }
       ],
       "ResponseHeaders": [
@@ -14706,7 +14706,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "42305"
+          "Value": "42094"
         },
         {
           "Name": "Content-Type",
@@ -14714,15 +14714,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ujN2emYxMBmkEKtovYKAAK7CkwuJ/TS8GCJw1IE/MAo=\""
+          "Value": "\"jBW8srz//Y+t0h8KJRWaVBtgRLpy93tpxeQQPTBmALY=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k=\""
+          "Value": "W/\"t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:55:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:18 GMT"
         },
         {
           "Name": "Vary",
@@ -14732,26 +14732,26 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "janmqyedq2"
+          "Value": "39bvaxxj3p"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k="
+          "Value": "sha256-t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg="
         },
         {
           "Name": "label",
-          "Value": "_framework/PlanningsApp.Ui.wasm"
+          "Value": "_framework/PlanningsApp.UI.wasm"
         }
       ]
     },
     {
-      "Route": "_framework/PlanningsApp.Ui.janmqyedq2.wasm",
-      "AssetFile": "_framework/PlanningsApp.Ui.janmqyedq2.wasm.gz",
+      "Route": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm",
+      "AssetFile": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000018713976"
+          "Quality": "0.000018721683"
         }
       ],
       "ResponseHeaders": [
@@ -14769,7 +14769,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53435"
+          "Value": "53413"
         },
         {
           "Name": "Content-Type",
@@ -14777,15 +14777,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DQwoHrnQU63xsZ+X4kl4CPyY3lXEvgVoXY/uvuEEqmE=\""
+          "Value": "\"nX0mI3wIb4rmFt/4ljoOC58zghu7smEmTBEOxqpXBu0=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k=\""
+          "Value": "W/\"t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:55:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:18 GMT"
         },
         {
           "Name": "Vary",
@@ -14795,21 +14795,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "janmqyedq2"
+          "Value": "39bvaxxj3p"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k="
+          "Value": "sha256-t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg="
         },
         {
           "Name": "label",
-          "Value": "_framework/PlanningsApp.Ui.wasm"
+          "Value": "_framework/PlanningsApp.UI.wasm"
         }
       ]
     },
     {
-      "Route": "_framework/PlanningsApp.Ui.janmqyedq2.wasm",
-      "AssetFile": "_framework/PlanningsApp.Ui.janmqyedq2.wasm",
+      "Route": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm",
+      "AssetFile": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14830,31 +14830,31 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k=\""
+          "Value": "\"t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:55:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:18 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "janmqyedq2"
+          "Value": "39bvaxxj3p"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k="
+          "Value": "sha256-t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg="
         },
         {
           "Name": "label",
-          "Value": "_framework/PlanningsApp.Ui.wasm"
+          "Value": "_framework/PlanningsApp.UI.wasm"
         }
       ]
     },
     {
-      "Route": "_framework/PlanningsApp.Ui.janmqyedq2.wasm.br",
-      "AssetFile": "_framework/PlanningsApp.Ui.janmqyedq2.wasm.br",
+      "Route": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm.br",
+      "AssetFile": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14871,7 +14871,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "42305"
+          "Value": "42094"
         },
         {
           "Name": "Content-Type",
@@ -14879,11 +14879,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ujN2emYxMBmkEKtovYKAAK7CkwuJ/TS8GCJw1IE/MAo=\""
+          "Value": "\"jBW8srz//Y+t0h8KJRWaVBtgRLpy93tpxeQQPTBmALY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:55:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:18 GMT"
         },
         {
           "Name": "Vary",
@@ -14893,21 +14893,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "janmqyedq2"
+          "Value": "39bvaxxj3p"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ujN2emYxMBmkEKtovYKAAK7CkwuJ/TS8GCJw1IE/MAo="
+          "Value": "sha256-jBW8srz//Y+t0h8KJRWaVBtgRLpy93tpxeQQPTBmALY="
         },
         {
           "Name": "label",
-          "Value": "_framework/PlanningsApp.Ui.wasm.br"
+          "Value": "_framework/PlanningsApp.UI.wasm.br"
         }
       ]
     },
     {
-      "Route": "_framework/PlanningsApp.Ui.janmqyedq2.wasm.gz",
-      "AssetFile": "_framework/PlanningsApp.Ui.janmqyedq2.wasm.gz",
+      "Route": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm.gz",
+      "AssetFile": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14924,7 +14924,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53435"
+          "Value": "53413"
         },
         {
           "Name": "Content-Type",
@@ -14932,11 +14932,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DQwoHrnQU63xsZ+X4kl4CPyY3lXEvgVoXY/uvuEEqmE=\""
+          "Value": "\"nX0mI3wIb4rmFt/4ljoOC58zghu7smEmTBEOxqpXBu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:55:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:18 GMT"
         },
         {
           "Name": "Vary",
@@ -14946,26 +14946,26 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "janmqyedq2"
+          "Value": "39bvaxxj3p"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DQwoHrnQU63xsZ+X4kl4CPyY3lXEvgVoXY/uvuEEqmE="
+          "Value": "sha256-nX0mI3wIb4rmFt/4ljoOC58zghu7smEmTBEOxqpXBu0="
         },
         {
           "Name": "label",
-          "Value": "_framework/PlanningsApp.Ui.wasm.gz"
+          "Value": "_framework/PlanningsApp.UI.wasm.gz"
         }
       ]
     },
     {
-      "Route": "_framework/PlanningsApp.Ui.wasm",
-      "AssetFile": "_framework/PlanningsApp.Ui.janmqyedq2.wasm.br",
+      "Route": "_framework/PlanningsApp.UI.wasm",
+      "AssetFile": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.000023637309"
+          "Quality": "0.000023755790"
         }
       ],
       "ResponseHeaders": [
@@ -14983,7 +14983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "42305"
+          "Value": "42094"
         },
         {
           "Name": "Content-Type",
@@ -14991,15 +14991,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ujN2emYxMBmkEKtovYKAAK7CkwuJ/TS8GCJw1IE/MAo=\""
+          "Value": "\"jBW8srz//Y+t0h8KJRWaVBtgRLpy93tpxeQQPTBmALY=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k=\""
+          "Value": "W/\"t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:55:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:18 GMT"
         },
         {
           "Name": "Vary",
@@ -15009,18 +15009,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k="
+          "Value": "sha256-t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg="
         }
       ]
     },
     {
-      "Route": "_framework/PlanningsApp.Ui.wasm",
-      "AssetFile": "_framework/PlanningsApp.Ui.janmqyedq2.wasm.gz",
+      "Route": "_framework/PlanningsApp.UI.wasm",
+      "AssetFile": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000018713976"
+          "Quality": "0.000018721683"
         }
       ],
       "ResponseHeaders": [
@@ -15038,7 +15038,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53435"
+          "Value": "53413"
         },
         {
           "Name": "Content-Type",
@@ -15046,15 +15046,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DQwoHrnQU63xsZ+X4kl4CPyY3lXEvgVoXY/uvuEEqmE=\""
+          "Value": "\"nX0mI3wIb4rmFt/4ljoOC58zghu7smEmTBEOxqpXBu0=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k=\""
+          "Value": "W/\"t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:55:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:18 GMT"
         },
         {
           "Name": "Vary",
@@ -15064,13 +15064,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k="
+          "Value": "sha256-t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg="
         }
       ]
     },
     {
-      "Route": "_framework/PlanningsApp.Ui.wasm",
-      "AssetFile": "_framework/PlanningsApp.Ui.janmqyedq2.wasm",
+      "Route": "_framework/PlanningsApp.UI.wasm",
+      "AssetFile": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15091,23 +15091,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k=\""
+          "Value": "\"t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:55:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:18 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-a2HCLoOl4+QA0n5hUeOHuk+X9+wGZ01QUVsXucapS3k="
+          "Value": "sha256-t4iMGkpRPcR+ZcXYEPKztHCs81PkqVU0K/25gXXpdxg="
         }
       ]
     },
     {
-      "Route": "_framework/PlanningsApp.Ui.wasm.br",
-      "AssetFile": "_framework/PlanningsApp.Ui.janmqyedq2.wasm.br",
+      "Route": "_framework/PlanningsApp.UI.wasm.br",
+      "AssetFile": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15124,7 +15124,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "42305"
+          "Value": "42094"
         },
         {
           "Name": "Content-Type",
@@ -15132,11 +15132,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ujN2emYxMBmkEKtovYKAAK7CkwuJ/TS8GCJw1IE/MAo=\""
+          "Value": "\"jBW8srz//Y+t0h8KJRWaVBtgRLpy93tpxeQQPTBmALY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:55:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:18 GMT"
         },
         {
           "Name": "Vary",
@@ -15146,13 +15146,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ujN2emYxMBmkEKtovYKAAK7CkwuJ/TS8GCJw1IE/MAo="
+          "Value": "sha256-jBW8srz//Y+t0h8KJRWaVBtgRLpy93tpxeQQPTBmALY="
         }
       ]
     },
     {
-      "Route": "_framework/PlanningsApp.Ui.wasm.gz",
-      "AssetFile": "_framework/PlanningsApp.Ui.janmqyedq2.wasm.gz",
+      "Route": "_framework/PlanningsApp.UI.wasm.gz",
+      "AssetFile": "_framework/PlanningsApp.UI.39bvaxxj3p.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15169,7 +15169,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53435"
+          "Value": "53413"
         },
         {
           "Name": "Content-Type",
@@ -15177,11 +15177,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DQwoHrnQU63xsZ+X4kl4CPyY3lXEvgVoXY/uvuEEqmE=\""
+          "Value": "\"nX0mI3wIb4rmFt/4ljoOC58zghu7smEmTBEOxqpXBu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:55:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:18 GMT"
         },
         {
           "Name": "Vary",
@@ -15191,7 +15191,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DQwoHrnQU63xsZ+X4kl4CPyY3lXEvgVoXY/uvuEEqmE="
+          "Value": "sha256-nX0mI3wIb4rmFt/4ljoOC58zghu7smEmTBEOxqpXBu0="
         }
       ]
     },
@@ -17347,7 +17347,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"osgpruAiA7Z05yXQmUiU4hiMn8y+1oJJwWkP3Nh8b58=\""
+          "Value": "\"osgpruAiA7Z05yXQmUIU4hiMn8y+1oJJwWkP3Nh8b58=\""
         },
         {
           "Name": "ETag",
@@ -17502,7 +17502,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"osgpruAiA7Z05yXQmUiU4hiMn8y+1oJJwWkP3Nh8b58=\""
+          "Value": "\"osgpruAiA7Z05yXQmUIU4hiMn8y+1oJJwWkP3Nh8b58=\""
         },
         {
           "Name": "Last-Modified",
@@ -17520,7 +17520,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-osgpruAiA7Z05yXQmUiU4hiMn8y+1oJJwWkP3Nh8b58="
+          "Value": "sha256-osgpruAiA7Z05yXQmUIU4hiMn8y+1oJJwWkP3Nh8b58="
         },
         {
           "Name": "label",
@@ -17616,7 +17616,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"osgpruAiA7Z05yXQmUiU4hiMn8y+1oJJwWkP3Nh8b58=\""
+          "Value": "\"osgpruAiA7Z05yXQmUIU4hiMn8y+1oJJwWkP3Nh8b58=\""
         },
         {
           "Name": "ETag",
@@ -17747,7 +17747,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"osgpruAiA7Z05yXQmUiU4hiMn8y+1oJJwWkP3Nh8b58=\""
+          "Value": "\"osgpruAiA7Z05yXQmUIU4hiMn8y+1oJJwWkP3Nh8b58=\""
         },
         {
           "Name": "Last-Modified",
@@ -17761,7 +17761,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-osgpruAiA7Z05yXQmUiU4hiMn8y+1oJJwWkP3Nh8b58="
+          "Value": "sha256-osgpruAiA7Z05yXQmUIU4hiMn8y+1oJJwWkP3Nh8b58="
         }
       ]
     },
@@ -28082,7 +28082,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk=\""
+          "Value": "W/\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk=\""
         },
         {
           "Name": "Last-Modified",
@@ -28100,7 +28100,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk="
+          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk="
         },
         {
           "Name": "label",
@@ -28145,7 +28145,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk=\""
+          "Value": "W/\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk=\""
         },
         {
           "Name": "Last-Modified",
@@ -28163,7 +28163,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk="
+          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk="
         },
         {
           "Name": "label",
@@ -28194,7 +28194,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk=\""
+          "Value": "\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk=\""
         },
         {
           "Name": "Last-Modified",
@@ -28208,7 +28208,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk="
+          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk="
         },
         {
           "Name": "label",
@@ -28359,7 +28359,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk=\""
+          "Value": "W/\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk=\""
         },
         {
           "Name": "Last-Modified",
@@ -28373,7 +28373,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk="
+          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk="
         }
       ]
     },
@@ -28414,7 +28414,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk=\""
+          "Value": "W/\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk=\""
         },
         {
           "Name": "Last-Modified",
@@ -28428,7 +28428,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk="
+          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk="
         }
       ]
     },
@@ -28455,7 +28455,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk=\""
+          "Value": "\"Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk=\""
         },
         {
           "Name": "Last-Modified",
@@ -28465,7 +28465,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUiVHueKA95hlk="
+          "Value": "sha256-Ntd+UxT8s9ldE98M8Hdl5Kd9KV8QqBUIVHueKA95hlk="
         }
       ]
     },
@@ -31152,17 +31152,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ahNmmn/Lfy8CH4eNwLImdp2J58fIJSBWen/P5lEbBOM=\""
+          "Value": "\"JNLxK1s1peQd1JD+qoxB8QI2WcDcGdZA4eVLndlqDTs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 20:19:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:19 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ahNmmn/Lfy8CH4eNwLImdp2J58fIJSBWen/P5lEbBOM="
+          "Value": "sha256-JNLxK1s1peQd1JD+qoxB8QI2WcDcGdZA4eVLndlqDTs="
         }
       ]
     },
@@ -31173,7 +31173,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.000256871307"
+          "Quality": "0.000256344527"
         }
       ],
       "ResponseHeaders": [
@@ -31191,7 +31191,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3892"
+          "Value": "3900"
         },
         {
           "Name": "Content-Type",
@@ -31199,15 +31199,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cxjhcNnt/laG62IZXwksipNiZoL7rge4sJUfjHKaESc=\""
+          "Value": "\"vJbvZumrPTCvSKVk4/qpzlJpc4oxjSIXTIxOFMeb0Xs=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ahNmmn/Lfy8CH4eNwLImdp2J58fIJSBWen/P5lEbBOM=\""
+          "Value": "W/\"JNLxK1s1peQd1JD+qoxB8QI2WcDcGdZA4eVLndlqDTs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 20:19:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:19 GMT"
         },
         {
           "Name": "Vary",
@@ -31217,7 +31217,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ahNmmn/Lfy8CH4eNwLImdp2J58fIJSBWen/P5lEbBOM="
+          "Value": "sha256-JNLxK1s1peQd1JD+qoxB8QI2WcDcGdZA4eVLndlqDTs="
         }
       ]
     },
@@ -31254,15 +31254,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nsYfJqLSR4rc/Mj2bVr1XEklG6KgOwi7cYzl7N9wRnM=\""
+          "Value": "\"L5p7vgN5B11vKFd43+fRzMBKPJCnkJJwo6SchMIB0iM=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ahNmmn/Lfy8CH4eNwLImdp2J58fIJSBWen/P5lEbBOM=\""
+          "Value": "W/\"JNLxK1s1peQd1JD+qoxB8QI2WcDcGdZA4eVLndlqDTs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 20:19:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:19 GMT"
         },
         {
           "Name": "Vary",
@@ -31272,7 +31272,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ahNmmn/Lfy8CH4eNwLImdp2J58fIJSBWen/P5lEbBOM="
+          "Value": "sha256-JNLxK1s1peQd1JD+qoxB8QI2WcDcGdZA4eVLndlqDTs="
         }
       ]
     },
@@ -31295,7 +31295,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3892"
+          "Value": "3900"
         },
         {
           "Name": "Content-Type",
@@ -31303,11 +31303,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cxjhcNnt/laG62IZXwksipNiZoL7rge4sJUfjHKaESc=\""
+          "Value": "\"vJbvZumrPTCvSKVk4/qpzlJpc4oxjSIXTIxOFMeb0Xs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 20:19:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:19 GMT"
         },
         {
           "Name": "Vary",
@@ -31317,7 +31317,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cxjhcNnt/laG62IZXwksipNiZoL7rge4sJUfjHKaESc="
+          "Value": "sha256-vJbvZumrPTCvSKVk4/qpzlJpc4oxjSIXTIxOFMeb0Xs="
         }
       ]
     },
@@ -31348,11 +31348,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nsYfJqLSR4rc/Mj2bVr1XEklG6KgOwi7cYzl7N9wRnM=\""
+          "Value": "\"L5p7vgN5B11vKFd43+fRzMBKPJCnkJJwo6SchMIB0iM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 20:19:17 GMT"
+          "Value": "Sat, 17 May 2025 21:35:19 GMT"
         },
         {
           "Name": "Vary",
@@ -31362,7 +31362,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nsYfJqLSR4rc/Mj2bVr1XEklG6KgOwi7cYzl7N9wRnM="
+          "Value": "sha256-L5p7vgN5B11vKFd43+fRzMBKPJCnkJJwo6SchMIB0iM="
         }
       ]
     },
@@ -31436,7 +31436,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aODHHN99ZO6xBdRfQYKCKDEdMXpBUi2D7x+JOLJt8MQ=\""
+          "Value": "\"aODHHN99ZO6xBdRfQYKCKDEdMXpBUI2D7x+JOLJt8MQ=\""
         },
         {
           "Name": "ETag",
@@ -31585,7 +31585,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aODHHN99ZO6xBdRfQYKCKDEdMXpBUi2D7x+JOLJt8MQ=\""
+          "Value": "\"aODHHN99ZO6xBdRfQYKCKDEdMXpBUI2D7x+JOLJt8MQ=\""
         },
         {
           "Name": "Last-Modified",
@@ -31599,7 +31599,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aODHHN99ZO6xBdRfQYKCKDEdMXpBUi2D7x+JOLJt8MQ="
+          "Value": "sha256-aODHHN99ZO6xBdRfQYKCKDEdMXpBUI2D7x+JOLJt8MQ="
         }
       ]
     },
@@ -33864,13 +33864,290 @@
       ]
     },
     {
+      "Route": "appsettings.35yt6ccsb3.json",
+      "AssetFile": "appsettings.json.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.011627906977"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GqhV2/Y3V101M2m0kqgple+FQlsfhICKR5K0PMBPHuY=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 21:32:08 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "35yt6ccsb3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg="
+        },
+        {
+          "Name": "label",
+          "Value": "appsettings.json"
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.35yt6ccsb3.json",
+      "AssetFile": "appsettings.json.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.010989010989"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k/0UOaPKNJDWqLomWWnbde5/bXU+U6sajX7vzZ0WbJE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 21:32:08 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "35yt6ccsb3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg="
+        },
+        {
+          "Name": "label",
+          "Value": "appsettings.json"
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.35yt6ccsb3.json",
+      "AssetFile": "appsettings.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 21:32:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "35yt6ccsb3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg="
+        },
+        {
+          "Name": "label",
+          "Value": "appsettings.json"
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.35yt6ccsb3.json.br",
+      "AssetFile": "appsettings.json.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GqhV2/Y3V101M2m0kqgple+FQlsfhICKR5K0PMBPHuY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 21:32:08 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "35yt6ccsb3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GqhV2/Y3V101M2m0kqgple+FQlsfhICKR5K0PMBPHuY="
+        },
+        {
+          "Name": "label",
+          "Value": "appsettings.json.br"
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.35yt6ccsb3.json.gz",
+      "AssetFile": "appsettings.json.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k/0UOaPKNJDWqLomWWnbde5/bXU+U6sajX7vzZ0WbJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 21:32:08 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "35yt6ccsb3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k/0UOaPKNJDWqLomWWnbde5/bXU+U6sajX7vzZ0WbJE="
+        },
+        {
+          "Name": "label",
+          "Value": "appsettings.json.gz"
+        }
+      ]
+    },
+    {
       "Route": "appsettings.json",
       "AssetFile": "appsettings.json.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.010000000000"
+          "Quality": "0.011627906977"
         }
       ],
       "ResponseHeaders": [
@@ -33888,7 +34165,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "99"
+          "Value": "85"
         },
         {
           "Name": "Content-Type",
@@ -33896,15 +34173,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pTdmb/XHMY/XUyVxcj5aGaSjiF9APQ1ABhRgFpsVvio=\""
+          "Value": "\"GqhV2/Y3V101M2m0kqgple+FQlsfhICKR5K0PMBPHuY=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g=\""
+          "Value": "W/\"F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:04:56 GMT"
+          "Value": "Sat, 17 May 2025 21:32:08 GMT"
         },
         {
           "Name": "Vary",
@@ -33914,7 +34191,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g="
+          "Value": "sha256-F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg="
         }
       ]
     },
@@ -33925,7 +34202,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.008620689655"
+          "Quality": "0.010989010989"
         }
       ],
       "ResponseHeaders": [
@@ -33943,7 +34220,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "115"
+          "Value": "90"
         },
         {
           "Name": "Content-Type",
@@ -33951,15 +34228,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8eXa4rbWHCAYu/fXZ9VceDk+V3Rk/mo0iRrL2/PrGzM=\""
+          "Value": "\"k/0UOaPKNJDWqLomWWnbde5/bXU+U6sajX7vzZ0WbJE=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g=\""
+          "Value": "W/\"F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:04:56 GMT"
+          "Value": "Sat, 17 May 2025 21:32:08 GMT"
         },
         {
           "Name": "Vary",
@@ -33969,7 +34246,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g="
+          "Value": "sha256-F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg="
         }
       ]
     },
@@ -33988,7 +34265,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "168"
+          "Value": "102"
         },
         {
           "Name": "Content-Type",
@@ -33996,17 +34273,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g=\""
+          "Value": "\"F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:04:56 GMT"
+          "Value": "Sat, 17 May 2025 21:32:08 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g="
+          "Value": "sha256-F4hJ4HOxH51gjsAOtGBr2ueDwnPDx/fhLwnZtsgkcHg="
         }
       ]
     },
@@ -34029,7 +34306,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "99"
+          "Value": "85"
         },
         {
           "Name": "Content-Type",
@@ -34037,11 +34314,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pTdmb/XHMY/XUyVxcj5aGaSjiF9APQ1ABhRgFpsVvio=\""
+          "Value": "\"GqhV2/Y3V101M2m0kqgple+FQlsfhICKR5K0PMBPHuY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:04:56 GMT"
+          "Value": "Sat, 17 May 2025 21:32:08 GMT"
         },
         {
           "Name": "Vary",
@@ -34051,7 +34328,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pTdmb/XHMY/XUyVxcj5aGaSjiF9APQ1ABhRgFpsVvio="
+          "Value": "sha256-GqhV2/Y3V101M2m0kqgple+FQlsfhICKR5K0PMBPHuY="
         }
       ]
     },
@@ -34074,7 +34351,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "115"
+          "Value": "90"
         },
         {
           "Name": "Content-Type",
@@ -34082,11 +34359,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8eXa4rbWHCAYu/fXZ9VceDk+V3Rk/mo0iRrL2/PrGzM=\""
+          "Value": "\"k/0UOaPKNJDWqLomWWnbde5/bXU+U6sajX7vzZ0WbJE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:04:56 GMT"
+          "Value": "Sat, 17 May 2025 21:32:08 GMT"
         },
         {
           "Name": "Vary",
@@ -34096,284 +34373,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8eXa4rbWHCAYu/fXZ9VceDk+V3Rk/mo0iRrL2/PrGzM="
-        }
-      ]
-    },
-    {
-      "Route": "appsettings.ngu4uoqh26.json",
-      "AssetFile": "appsettings.json.br",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "br",
-          "Quality": "0.010000000000"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "99"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pTdmb/XHMY/XUyVxcj5aGaSjiF9APQ1ABhRgFpsVvio=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:04:56 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ngu4uoqh26"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g="
-        },
-        {
-          "Name": "label",
-          "Value": "appsettings.json"
-        }
-      ]
-    },
-    {
-      "Route": "appsettings.ngu4uoqh26.json",
-      "AssetFile": "appsettings.json.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.008620689655"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "115"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8eXa4rbWHCAYu/fXZ9VceDk+V3Rk/mo0iRrL2/PrGzM=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:04:56 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ngu4uoqh26"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g="
-        },
-        {
-          "Name": "label",
-          "Value": "appsettings.json"
-        }
-      ]
-    },
-    {
-      "Route": "appsettings.ngu4uoqh26.json",
-      "AssetFile": "appsettings.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "168"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:04:56 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ngu4uoqh26"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-N5H3V9arUDZrUv+LgWsjKRDHQYOfDZZVPxCJNhs0X1g="
-        },
-        {
-          "Name": "label",
-          "Value": "appsettings.json"
-        }
-      ]
-    },
-    {
-      "Route": "appsettings.ngu4uoqh26.json.br",
-      "AssetFile": "appsettings.json.br",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "99"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pTdmb/XHMY/XUyVxcj5aGaSjiF9APQ1ABhRgFpsVvio=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:04:56 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ngu4uoqh26"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pTdmb/XHMY/XUyVxcj5aGaSjiF9APQ1ABhRgFpsVvio="
-        },
-        {
-          "Name": "label",
-          "Value": "appsettings.json.br"
-        }
-      ]
-    },
-    {
-      "Route": "appsettings.ngu4uoqh26.json.gz",
-      "AssetFile": "appsettings.json.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "115"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8eXa4rbWHCAYu/fXZ9VceDk+V3Rk/mo0iRrL2/PrGzM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 19:04:56 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ngu4uoqh26"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-8eXa4rbWHCAYu/fXZ9VceDk+V3Rk/mo0iRrL2/PrGzM="
-        },
-        {
-          "Name": "label",
-          "Value": "appsettings.json.gz"
+          "Value": "sha256-k/0UOaPKNJDWqLomWWnbde5/bXU+U6sajX7vzZ0WbJE="
         }
       ]
     },
@@ -35096,7 +35096,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:41:25 GMT"
+          "Value": "Sat, 17 May 2025 21:30:34 GMT"
         },
         {
           "Name": "Vary",
@@ -35159,7 +35159,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:41:25 GMT"
+          "Value": "Sat, 17 May 2025 21:30:34 GMT"
         },
         {
           "Name": "Vary",
@@ -35208,7 +35208,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:41:25 GMT"
+          "Value": "Sat, 17 May 2025 21:30:34 GMT"
         }
       ],
       "EndpointProperties": [
@@ -35257,7 +35257,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:41:25 GMT"
+          "Value": "Sat, 17 May 2025 21:30:34 GMT"
         },
         {
           "Name": "Vary",
@@ -35310,7 +35310,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:41:25 GMT"
+          "Value": "Sat, 17 May 2025 21:30:34 GMT"
         },
         {
           "Name": "Vary",
@@ -35373,7 +35373,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:41:25 GMT"
+          "Value": "Sat, 17 May 2025 21:30:34 GMT"
         },
         {
           "Name": "Vary",
@@ -35428,7 +35428,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:41:25 GMT"
+          "Value": "Sat, 17 May 2025 21:30:34 GMT"
         },
         {
           "Name": "Vary",
@@ -35469,7 +35469,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:41:25 GMT"
+          "Value": "Sat, 17 May 2025 21:30:34 GMT"
         }
       ],
       "EndpointProperties": [
@@ -35510,7 +35510,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:41:25 GMT"
+          "Value": "Sat, 17 May 2025 21:30:34 GMT"
         },
         {
           "Name": "Vary",
@@ -35555,7 +35555,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:41:25 GMT"
+          "Value": "Sat, 17 May 2025 21:30:34 GMT"
         },
         {
           "Name": "Vary",

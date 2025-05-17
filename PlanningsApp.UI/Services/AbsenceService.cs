@@ -3,10 +3,10 @@ using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
-using PlanningsApp.Ui.Models;
-using PlanningsApp.Ui.Services.Interfaces;
+using PlanningsApp.UI.Models;
+using PlanningsApp.UI.Services.Interfaces;
 
-namespace PlanningsApp.Ui.Services;
+namespace PlanningsApp.UI.Services;
 
 public class AbsenceService(
     HttpClient httpClient,

@@ -2,11 +2,12 @@ using System.Globalization;
 using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
-using PlanningsApp.Ui.Models;
-using PlanningsApp.Ui.Models.PlanningModels;
-using PlanningsApp.Ui.Services.Interfaces;
+using PlanningsApp.UI.Models;
+using PlanningsApp.UI.Models.PlanningModels;
+using PlanningsApp.UI.Services;
+using PlanningsApp.UI.Services.Interfaces;
 
-namespace PlanningsApp.Ui.Pages;
+namespace PlanningsApp.UI.Pages;
 
 public partial class DepartmentPlanningPage : ComponentBase
 {

@@ -1,6 +1,6 @@
 using System.Globalization;
 
-namespace PlanningsApp.Ui.Models.PlanningModels;
+namespace PlanningsApp.UI.Models.PlanningModels;
 
 // Class used for building the planning
 // Data structure for storing in NoSQL DB

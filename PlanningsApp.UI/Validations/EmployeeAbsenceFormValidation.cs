@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
-using PlanningsApp.Ui.Models;
+using PlanningsApp.UI.Models;
 
-namespace PlanningsApp.Ui.Validations;
+namespace PlanningsApp.UI.Validations;
 
 public class EmployeeAbsenceFormValidation
 {

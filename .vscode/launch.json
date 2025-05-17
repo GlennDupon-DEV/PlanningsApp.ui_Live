@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C#: Identity Server Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/PlanningsApp.IdentityServer/PlanningsApp.IdentityServer.csproj"
+        },
+        {
+            "name": "C#: Planning UI Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/PlanningsApp.UI/PlanningsApp.UI.csproj",
+        },
+        {
+            "name": "C#: Planning API Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/PlanningsApp.Planning.Api/PlanningsApp.Planning.Api.csproj",
+        },
+        {
+            "name": "C#: Employees API Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/PlanningsApp.Employees.Api/PlanningsApp.Employees.Api.csproj",
+        },
+
+
+    ]
+}

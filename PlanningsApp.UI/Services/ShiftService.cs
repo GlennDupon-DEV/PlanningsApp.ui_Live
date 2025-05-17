@@ -1,12 +1,12 @@
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
-using PlanningsApp.Ui.Mapper;
-using PlanningsApp.Ui.Models;
-using PlanningsApp.Ui.Models.PlanningModels;
-using PlanningsApp.Ui.Services.Interfaces;
+using PlanningsApp.UI.Mapper;
+using PlanningsApp.UI.Models;
+using PlanningsApp.UI.Models.PlanningModels;
+using PlanningsApp.UI.Services.Interfaces;
 
-namespace PlanningsApp.Ui.Services;
+namespace PlanningsApp.UI.Services;
 
 public class ShiftService(
     HttpClient httpClient,

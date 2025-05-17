@@ -1,9 +1,9 @@
 using System.Reflection.Metadata.Ecma335;
-using PlanningsApp.Ui.Models;
-using PlanningsApp.Ui.Models;
-using PlanningsApp.Ui.Models.PlanningModels;
+using PlanningsApp.UI.Models;
+using PlanningsApp.UI.Models;
+using PlanningsApp.UI.Models.PlanningModels;
 
-namespace PlanningsApp.Ui.Mapper;
+namespace PlanningsApp.UI.Mapper;
 
 public static class PlanningMapper
 {

@@ -1,6 +1,6 @@
 using System.Collections.Specialized;
 
-namespace PlanningsApp.Ui.Models;
+namespace PlanningsApp.UI.Models;
 
 public class Line
 {

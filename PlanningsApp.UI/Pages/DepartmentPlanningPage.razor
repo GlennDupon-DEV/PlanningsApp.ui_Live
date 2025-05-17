@@ -1,6 +1,6 @@
 @page "/planning/{departmentName}"
-@using PlanningsApp.Ui.Models
-@using PlanningsApp.Ui.Models.PlanningModels
+@using PlanningsApp.UI.Models
+@using PlanningsApp.UI.Models.PlanningModels
 
 @if (_isLoading)
 {
@@ -49,6 +49,7 @@ else
                             <MudDropContainer T="PlanningEmployee" Items="_employeesOfDepartment"
                                               ItemDropped="PlanEmployee"
                                               ItemDisabled="@(item => item.TimesGenerated >= 6)"
+                                              AllowReorder="false"
                                               ItemsSelector="@((item, plannedDropzone) => item.Identifier.ToString() == plannedDropzone)"
                                               Class="d-flex flex-wrap flex-grow-1 pa-2 justify-space-around">
                                 <ChildContent>

@@ -1,4 +1,4 @@
-namespace PlanningsApp.Ui.Models;
+namespace PlanningsApp.UI.Models;
 
 public class Workpost
 {

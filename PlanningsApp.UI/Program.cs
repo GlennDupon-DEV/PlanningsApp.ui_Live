@@ -2,10 +2,10 @@ using System.Net.Http.Json;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
-using PlanningsApp.Ui;
-using PlanningsApp.Ui.Models;
-using PlanningsApp.Ui.Services;
-using PlanningsApp.Ui.Services.Interfaces;
+using PlanningsApp.UI;
+using PlanningsApp.UI.Models;
+using PlanningsApp.UI.Services;
+using PlanningsApp.UI.Services.Interfaces;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: false);

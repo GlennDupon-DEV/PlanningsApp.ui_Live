@@ -1,6 +1,6 @@
-using PlanningsApp.Ui.Models;
+using PlanningsApp.UI.Models;
 
-namespace PlanningsApp.Ui.Services.Interfaces;
+namespace PlanningsApp.UI.Services.Interfaces;
 
 public interface IDepartmentService
 {

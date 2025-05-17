@@ -1,111 +1,98 @@
 @page "/absence"
 @using System.ComponentModel.DataAnnotations
-@using PlanningsApp.Ui.Components
-@using PlanningsApp.Ui.Models
-@using PlanningsApp.Ui.Services.Interfaces
+@using PlanningsApp.UI.Components
+@using PlanningsApp.UI.Models
+@using PlanningsApp.UI.Services.Interfaces
 @inject IDialogService DialogService
 
 
 <MudContainer Style="min-height: 75vh;" MaxWidth="MaxWidth.ExtraLarge">
     @if (_isLoading)
     {
-        <div
-            style="min-height: 75vh;display:flex;flex-direction: row; align-items: center; justify-content: center; width: 100%;">
+        <div style="min-height: 75vh;display:flex;flex-direction: row; align-items: center; justify-content: center; width: 100%;">
             <MudProgressCircular Color="Color.Secondary" Size="Size.Large" Indeterminate="true" />
             <MudText Class="ml-10">Loading Employee Absences...</MudText>
         </div>
     }
     else
     {
-        <MudTable Elevation="5" Loading="@_isLoading" LoadingProgressColor="Color.Secondary" Items="@_employeeAbsences"
-            Hover="true" CanCancelEdit="true" Filter="new Func<EmployeeAbsence, bool>(FilterFunc)"
-            @bind-SelectedItem="selectedItem" SortLabel="Sort By" RowEditPreview="BackupItem"
-            RowEditCancel="ResetItemToOriginalValues" RowEditCommit="@(async (editedItem) =>
-                                                                                                                                             {
-                                                                                                                                                 if (editedItem is EmployeeAbsence updatedAbsence)
-                                                                                                                                                 {
-                                                                                                                                                     try
-                                                                                                                                                     {
-                                                                                                                                                         await AbsenceService.PatchEmployeeAbsence(updatedAbsence);
-                                                                                                                                                         Snackbar.Add("Employee absence updated", Severity.Success);
-                                                                                                                                                         _employeeAbsences = await AbsenceService.GetEmployeeAbsences();
-                                                                                                                                                         StateHasChanged();
-                                                                                                                                                     }
-                                                                                                                                                     catch (ValidationException vE)
-                                                                                                                                                     {
-                                                                                                                                                         Snackbar.Add(vE.Message, Severity.Warning);
-                                                                                                                                                     }
-                                                                                                                                                     catch (Exception ex)
-                                                                                                                                                     {
-                                                                                                                                                         ResetItemToOriginalValues(editedItem);
-                                                                                                                                                         Snackbar.Add(ex.Message, Severity.Error);
-                                                                                                                                                         StateHasChanged();
-                                                                                                                                                     }
+        <MudTable Elevation="5" Loading="@_isLoading" LoadingProgressColor="Color.Secondary" Items="@_employeeAbsences" Hover="true" CanCancelEdit="true" Filter="new Func<EmployeeAbsence, bool>(FilterFunc)"
+                  @bind-SelectedItem="selectedItem"
+                  SortLabel="Sort By"
+                  RowEditPreview="BackupItem"
+                  RowEditCancel="ResetItemToOriginalValues"
+                  RowEditCommit="@(async (editedItem) =>
+                                 {
+                                     if (editedItem is EmployeeAbsence updatedAbsence)
+                                     {
+                                         try
+                                         {
+                                             await AbsenceService.PatchEmployeeAbsence(updatedAbsence);
+                                             Snackbar.Add("Employee absence updated", Severity.Success);
+                                             _employeeAbsences = await AbsenceService.GetEmployeeAbsences();
+                                             StateHasChanged();
+                                         }
+                                         catch (ValidationException vE)
+                                         {
+                                             Snackbar.Add(vE.Message, Severity.Warning);
+                                         }
+                                         catch (Exception ex)
+                                         {
+                                             ResetItemToOriginalValues(editedItem);
+                                             Snackbar.Add(ex.Message, Severity.Error);
+                                             StateHasChanged();
+                                         }
 
-                                                                                                                                                 }
-                                                                                                                                             })"
-        EditTrigger="TableEditTrigger.RowClick" EditButtonPosition="TableEditButtonPosition.End">
-        <ToolBarContent>
-            <MudText Typo="Typo.h6">Employee Absences</MudText>
-            <MudSpacer />
-            <MudTextField @bind-Value="_searchString" Placeholder="Search" Adornment="Adornment.End"
-                AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Large" Class="mt-0"></MudTextField>
-        </ToolBarContent>
-        <HeaderContent>
-            <MudTh>
-                <MudTableSortLabel SortBy="new Func<EmployeeAbsence, object>(x => x.Employee.FullName)">Name
-                </MudTableSortLabel>
-            </MudTh>
-            <MudTh>
-                <MudTableSortLabel SortBy="new Func<EmployeeAbsence, object>(x => x.Absence.Name)">Type
-                </MudTableSortLabel>
-            </MudTh>
-            <MudTh>
-                <MudTableSortLabel SortBy="new Func<EmployeeAbsence, object>(x => x.StartDate)">Start Date
-                </MudTableSortLabel>
-            </MudTh>
-            <MudTh>
-                <MudTableSortLabel SortBy="new Func<EmployeeAbsence, object>(x => x.EndDate)">End Date
-                </MudTableSortLabel>
-            </MudTh>
-            <MudTh>
-                <MudTableSortLabel SortBy="new Func<EmployeeAbsence, object>(x => x.Description)">Description
-                </MudTableSortLabel>
-            </MudTh>
-        </HeaderContent>
-        <RowTemplate>
-            <MudTd DataLabel="Name">@context.Employee.FullName</MudTd>
-            <MudTd DataLabel="Type">@context.Absence.Name</MudTd>
-            <MudTd DataLabel="Start Date">@context.StartDate?.ToString("dd-MM-yyyy")</MudTd>
-            <MudTd DataLabel="End Date">@context.EndDate?.ToString("dd-MM-yyyy")</MudTd>
-            <MudTd DataLabel="Description">@context.Description</MudTd>
-        </RowTemplate>
-        <RowEditingTemplate>
-            <MudTd DataLabel="Name">@context.Employee.FullName</MudTd>
-            <MudTd DataLabel="Type">@context.Absence.Name</MudTd>
-            <MudTd DataLabel="Start Date">
-                <MudDatePicker Color="Color.Secondary" PickerVariant="PickerVariant.Dialog" Label="Start Date"
-                    DateFormat="dd/MM/yyyy" @bind-Date="@context.StartDate" />
-            </MudTd>
-            <MudTd DataLabel="End Date">
-                <MudDatePicker Color="Color.Secondary" PickerVariant="PickerVariant.Dialog" Label="End Date"
-                    DateFormat="dd/MM/yyyy" @bind-Date="@context.EndDate" />
-            </MudTd>
-            <MudTd DataLabel="Description">
-                <MudTextField @bind-Value="context.Description" />
-            </MudTd>
-        </RowEditingTemplate>
-        <PagerContent>
-            <MudTablePager HorizontalAlignment="HorizontalAlignment.Center" />
-        </PagerContent>
-    </MudTable>
-    <MudContainer Style="bottom: 25px;position:  fixed; width:auto;right: 0">
-        <MudTooltip Placement="Placement.Left" Text="Add Employee Absence">
-            <MudFab OnClick="OpenDialogAsync" Size="Size.Medium" StartIcon="@Icons.Material.Filled.Add"
-                Color="Color.Secondary" />
-        </MudTooltip>
-    </MudContainer>
-        }
+                                     }
+                                 })"
+                  EditTrigger="TableEditTrigger.RowClick"
+                  EditButtonPosition="TableEditButtonPosition.End">
+            <ToolBarContent>
+                <MudText Typo="Typo.h6">Employee Absences</MudText>
+                <MudSpacer/>
+                <MudTextField @bind-Value="_searchString" Placeholder="Search" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Large" Class="mt-0"></MudTextField>
+            </ToolBarContent>
+            <HeaderContent>
+                <MudTh><MudTableSortLabel SortBy="new Func<EmployeeAbsence, object>(x => x.Employee.FullName)">Name</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<EmployeeAbsence, object>(x => x.Absence.Name)">Type</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<EmployeeAbsence, object>(x => x.StartDate)">Start Date</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<EmployeeAbsence, object>(x => x.EndDate)">End Date</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<EmployeeAbsence, object>(x => x.Description)">Description</MudTableSortLabel></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Name">@context.Employee.FullName</MudTd>
+                <MudTd DataLabel="Type">@context.Absence.Name</MudTd>
+                <MudTd DataLabel="Start Date">@context.StartDate?.ToString("dd-MM-yyyy")</MudTd>
+                <MudTd DataLabel="End Date">@context.EndDate?.ToString("dd-MM-yyyy")</MudTd>
+                <MudTd DataLabel="Description">@context.Description</MudTd>
+            </RowTemplate>
+            <RowEditingTemplate>
+                <MudTd DataLabel="Name">@context.Employee.FullName</MudTd>
+                <MudTd DataLabel="Type">@context.Absence.Name</MudTd>
+                <MudTd DataLabel="Start Date">
+                    <MudDatePicker Color="Color.Secondary" PickerVariant="PickerVariant.Dialog" Label="Start Date"
+                                   DateFormat="dd/MM/yyyy"
+                                   @bind-Date="@context.StartDate"/>
+                </MudTd>
+                <MudTd DataLabel="End Date">
+                    <MudDatePicker Color="Color.Secondary" PickerVariant="PickerVariant.Dialog" Label="End Date"
+                                   DateFormat="dd/MM/yyyy"
+                                   @bind-Date="@context.EndDate"/>
+</MudTd>
+                <MudTd DataLabel="Description">
+                    <MudTextField  @bind-Value="context.Description"/>
+                </MudTd>
+            </RowEditingTemplate>
+            <PagerContent >
+                <MudTablePager  HorizontalAlignment="HorizontalAlignment.Center" />
+            </PagerContent>
+        </MudTable>
+        <MudContainer Style="bottom: 25px;position:  fixed; width:auto;right: 0">
+            <MudTooltip Placement="Placement.Left" Text="Add Employee Absence">
+                <MudFab OnClick="OpenDialogAsync" Size="Size.Medium"  StartIcon="@Icons.Material.Filled.Add" Color="Color.Secondary" />
+            </MudTooltip>
+        </MudContainer>
+    }
 </MudContainer>
 
 <style>
@@ -137,11 +124,11 @@
             Snackbar.Add(e.Message);
         }
     }
-
+    
     private async Task OpenDialogAsync()
     {
-        DialogOptions options = new DialogOptions { CloseOnEscapeKey = true, BackgroundClass = "bg-blurred" };
-        IDialogReference dialog = await DialogService.ShowAsync<AbsenceModal>("", options);
+        DialogOptions options = new DialogOptions { CloseOnEscapeKey = true, BackgroundClass = "bg-blurred"};
+        IDialogReference dialog =  await DialogService.ShowAsync<AbsenceModal>("", options);
         DialogResult? result = await dialog.Result;
         if (!result.Canceled && result.Data is EmployeeAbsence newAbsence)
         {
@@ -151,17 +138,17 @@
     }
     private void BackupItem(object? employeeAbsence)
     {
-        _oldEmployeeAbsence = new EmployeeAbsence
-        {
-            Id = ((EmployeeAbsence)employeeAbsence).Id,
-            AbsenceId = ((EmployeeAbsence)employeeAbsence).AbsenceId,
-            StartDate = ((EmployeeAbsence)employeeAbsence).StartDate,
-            EndDate = ((EmployeeAbsence)employeeAbsence).EndDate,
-            Description = ((EmployeeAbsence)employeeAbsence).Description,
-            Absence = ((EmployeeAbsence)employeeAbsence).Absence,
-            Employee = ((EmployeeAbsence)employeeAbsence).Employee,
-            EmployeeId = ((EmployeeAbsence)employeeAbsence).EmployeeId
-        };
+            _oldEmployeeAbsence = new EmployeeAbsence
+            {
+                Id = ((EmployeeAbsence)employeeAbsence).Id,
+                AbsenceId = ((EmployeeAbsence)employeeAbsence).AbsenceId,
+                StartDate = ((EmployeeAbsence)employeeAbsence).StartDate,
+                EndDate = ((EmployeeAbsence)employeeAbsence).EndDate,
+                Description = ((EmployeeAbsence)employeeAbsence).Description,
+                Absence = ((EmployeeAbsence)employeeAbsence).Absence,
+                Employee = ((EmployeeAbsence)employeeAbsence).Employee,
+                EmployeeId = ((EmployeeAbsence)employeeAbsence).EmployeeId
+            };
     }
 
     private void ResetItemToOriginalValues(object? employeeAbsence)
@@ -195,10 +182,10 @@
             return true;
         return false;
     }
-
+    
     private DateTime? GetInitialDateTime(DateOnly? dateOnly)
     {
         return dateOnly?.ToDateTime(TimeOnly.MinValue);
     }
-
+    
 }
