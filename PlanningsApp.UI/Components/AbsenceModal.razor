@@ -1,0 +1,151 @@
+@using PlanningsApp.Ui.Models
+@using PlanningsApp.Ui.Services.Interfaces
+@using PlanningsApp.Ui.Validations
+<MudDialog Style="min-height: 75vh; width: 50vw;">
+    <TitleContent>
+        <MudText Typo="Typo.h5">
+            Create new employee absence
+        </MudText>
+        <MudDivider Class="my-2"></MudDivider>
+    </TitleContent>
+    <DialogContent>
+        <EditForm Model="@_validationModel" OnValidSubmit="OnValidSubmitEmployeeAbsence">
+            <DataAnnotationsValidator/>
+            @if (_isLoading)
+            {
+                <div
+                    style=";display:flex;flex-direction: row; align-items: center; justify-content: center; width: 100%;">
+                    <MudProgressCircular Color="Color.Secondary" Size="Size.Large" Indeterminate="true"/>
+                    <MudText Class="ml-10">Loading Employee Absences...</MudText>
+                </div>
+            }
+            else
+            {
+                <MudGrid>
+                    <MudItem xs="12" lg="6">
+                        <MudAutocomplete Variant="Variant.Filled" T="Employee" Label="Employee"
+                                         @bind-Value="_validationModel.Employee"
+                                         SearchFunc="@SearchEmployee"
+                                         OpenOnFocus="true"
+                                         MinCharacters="0"
+                                         ToStringFunc="@(e => e == null ? null : e.FullName)"
+                                         ShowProgressIndicator="true" ProgressIndicatorColor="Color.Secondary"
+                        />
+                    </MudItem>
+                    <MudItem xs="12" lg="6">
+                        <MudAutocomplete Variant="Variant.Filled" T="Absence" Label="Absence Type"
+                                         @bind-Value="_validationModel.Absence"
+                                         SearchFunc="@SearchAbsence"
+                                         OpenOnFocus="true"
+                                         ShowProgressIndicator="true" ProgressIndicatorColor="Color.Secondary"
+                                         ToStringFunc="@(a => a == null ? null : a.Name)"
+                        />
+                    </MudItem>
+                    <MudItem xs="12" lg="6">
+                        <MudDatePicker PickerVariant="PickerVariant.Dialog" Color="Color.Secondary" Label="Start Date"
+                                       Editable="true" @bind-Date="_validationModel.StartDate" Required="true"
+                                       DateFormat="dd/MM/yyyy"
+                                       Placeholder="dd-mm-yyyy" Variant="Variant.Filled"
+                        />
+                    </MudItem>
+                    <MudItem xs="12" lg="6">
+                        <MudDatePicker PickerVariant="PickerVariant.Dialog" Color="Color.Secondary" Label="End Date"
+                                       Editable="true" @bind-Date="_validationModel.EndDate" Required="true"
+                                                                       DateFormat="dd/MM/yyyy"
+
+                                       Placeholder="dd-mm-yyyy" Variant="Variant.Filled"
+                        />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudTextField Variant="Variant.Filled" Label="Description"
+                                      HelperText="Enter a short description" Class="mt-3"
+                                      @bind-Value="_validationModel.Description"
+                                      For="@(() => _validationModel.Description)"
+                                      InputType="InputType.Text"/>
+
+                    </MudItem>
+                </MudGrid>
+            }
+            <MudContainer Class="flex-row d-flex justify-space-around mt-5">
+                <MudButton OnClick="Cancel" ButtonType="ButtonType.Reset" Size="Size.Large" Variant="Variant.Text" Color="Color.Primary"
+                           >
+                    Cancel
+                </MudButton>
+                <MudButton ButtonType="ButtonType.Submit" Size="Size.Large" Variant="Variant.Filled"
+                           Color="Color.Secondary"
+                           >Submit Absence
+                </MudButton>
+            </MudContainer>
+        </EditForm>
+    </DialogContent>
+</MudDialog>
+
+@code {
+    [CascadingParameter] private IMudDialogInstance MudDialog { get; set; }
+    private List<Employee> _employees;
+    private List<Absence> _absences;
+    private bool _isLoading = true;
+    private EmployeeAbsenceFormValidation _validationModel = new EmployeeAbsenceFormValidation();
+
+    [Inject] public required IAbsenceService AbsenceService { get; set; }
+    [Inject] public required IEmployeeService EmployeeService { get; set; }
+    [Inject] public required ISnackbar Snackbar { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _employees = await EmployeeService.GetEmployeesAsync();
+            _absences = await AbsenceService.GetAbsencesAsync();
+            _isLoading = false;
+        }
+        catch (Exception e)
+        {
+            Snackbar.Add(e.Message, Severity.Error);
+        }
+    }
+
+    private async Task OnValidSubmitEmployeeAbsence()
+    {
+        try
+        {
+            EmployeeAbsence result = await AbsenceService.PostEmployeeAbsence(new EmployeeAbsence()
+            {
+                AbsenceId = _validationModel.Absence.Id,
+                EmployeeId = _validationModel.Employee.Id,
+                StartDate = _validationModel.StartDate,
+                EndDate = _validationModel.EndDate,
+                Description = _validationModel.Description,
+                Absence = _validationModel.Absence,
+                Employee = _validationModel.Employee
+            });
+            Snackbar.Add("Employee absence has been created", Severity.Success);
+            MudDialog.Close(DialogResult.Ok(result));
+        }
+        catch (Exception e)
+        {
+            Snackbar.Add(e.Message, Severity.Error);
+        }
+    }
+    
+    private void Cancel() => MudDialog.Cancel();
+
+    private async Task<IEnumerable<Employee>> SearchEmployee(string? s, CancellationToken cancellationToken)
+    {
+    if (string.IsNullOrWhiteSpace(s))
+        return _employees;
+
+    return _employees.Where(e => 
+        e.FullName.Contains(s, StringComparison.InvariantCultureIgnoreCase));
+    }
+
+    private async Task<IEnumerable<Absence>> SearchAbsence(string? s, CancellationToken cancellationToken)
+    {
+        if (string.IsNullOrEmpty(s))
+        {
+            return _absences;
+        }
+
+        return _absences.Where(e => e.Name.ToLower().Contains(s.ToLower(), StringComparison.InvariantCulture));
+    }
+}

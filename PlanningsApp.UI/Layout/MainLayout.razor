@@ -1,0 +1,57 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider Theme="_chocDecorTheme" IsDarkMode="true" />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="10">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start"
+            OnClick="@((e) => DrawerToggle())" />
+        <MudText Typo="Typo.h4">My Application</MudText>
+    </MudAppBar>
+    <MudDrawer Breakpoint="Breakpoint.Sm" OverlayAutoClose="true" Variant="@DrawerVariant.Temporary"
+        ClipMode="DrawerClipMode.Never" Elevation="10" @bind-Open="@_drawerOpen">
+        <NavBar />
+    </MudDrawer>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.ExtraLarge" class="py-5">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+
+
+@code {
+    bool _drawerOpen = false;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    readonly MudTheme _chocDecorTheme = new MudTheme()
+    {
+        PaletteDark = new PaletteDark()
+        {
+            Primary = "#3f51b5",
+            Secondary = "#eb6d0f",
+            Tertiary = "#653624",
+            TextPrimary = "#f8fcff",
+            TextSecondary = "#eb6d0f",
+            AppbarBackground = "#eb6d0f",
+            AppbarText = "#f8fcff",
+            HoverOpacity = 0.25,
+        },
+        Typography = new Typography()
+        {
+            Default = new DefaultTypography()
+            {
+                FontFamily = ["Quicksand", "sans-serif"],
+                FontWeight = "700"
+            }
+        }
+
+    };
+}

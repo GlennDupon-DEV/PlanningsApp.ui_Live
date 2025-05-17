@@ -1,0 +1,10 @@
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using Microsoft.AspNetCore.Components.Routing
+
+<MudContainer Style="min-width:50vw;overflow:hidden" MaxWidth="MaxWidth.ExtraLarge"
+    Class="d-flex object-center justify-center">
+    <MudStack Style="height: 50vh;" Justify="Justify.Center" AlignItems="AlignItems.Center">
+        <RemoteAuthenticatorView Action="LogIn" />
+        <MudProgressCircular Indeterminate="true" Size="Size.Large" Color="Color.Secondary" />
+    </MudStack>
+</MudContainer>

@@ -1,0 +1,15 @@
+﻿@page "/authentication/{action}"
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+
+<MudContainer Style="min-width:50vw;overflow:hidden" MaxWidth="MaxWidth.ExtraLarge"
+    Class="d-flex object-center justify-center">
+    <MudStack Style="height: 50vh;" Justify="Justify.Center" AlignItems="AlignItems.Center">
+        <RemoteAuthenticatorView Action="@Action" />
+        <MudProgressCircular Indeterminate="true" Size="Size.Large" Color="Color.Secondary" />
+    </MudStack>
+</MudContainer>
+
+@code {
+    [Parameter]
+    public string Action { get; set; }
+}

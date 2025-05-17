@@ -1,0 +1,171 @@
+@page "/planning/{departmentName}"
+@using PlanningsApp.Ui.Models
+@using PlanningsApp.Ui.Models.PlanningModels
+
+@if (_isLoading)
+{
+    <div
+        style="min-height: 75vh;display:flex;flex-direction: row; align-items: center; justify-content: center; width: 100%;">
+        <MudProgressCircular Color="Color.Secondary" Size="Size.Large" Indeterminate="true"/>
+        <MudText Class="ml-10">Loading Department Lines...</MudText>
+    </div>
+}
+else
+{
+    <MudContainer MaxWidth="MaxWidth.ExtraLarge" Class="d-flex mb-5 pa-0">
+        <MudNumericField Class="flex-none ml-5 mud-background-gray"
+                         Style="width: 150px; font-size: 20px;"
+                         HideSpinButtons="true"
+                         Value="@SelectedYear"
+                         ValueChanged="@(EventCallback.Factory.Create<int>(this, OnYearChanged))"
+                         Label="Year"
+                         Variant="Variant.Filled"
+                         Step="1"
+        />
+
+        <MudNumericField Class="flex-none ml-5 mud-background-gray"
+                         Style="width: 150px; font-size: 20px;"
+                         HideSpinButtons="true"
+                         Value="@SelectedWeek"
+                         ValueChanged="@(EventCallback.Factory.Create<int>(this, OnWeekChanged))"
+                         Label="Week"
+                         Variant="Variant.Filled"
+                         Step="1"
+                         Max="53"/>
+
+    </MudContainer>
+    <MudTabs Rounded="true" Outlined="false" Color="Color.Surface" Elevation="15" ApplyEffectsToContainer="true">
+        @foreach (PlanningLine line in _planning.Lines)
+        {
+            // Generate line tabs
+            <MudTabPanel Text="@line.Name">
+
+                <MudTabs Outlined="false" Rounded="false" Color="Color.Surface" Class="mud-background-gray"
+                         ApplyEffectsToContainer="true">
+                    @* Generate shift tabs *@
+                    @foreach (PlanningShift shift in line.Shifts)
+                    {
+                        <MudTabPanel Text="@shift.Name">
+                            <MudDropContainer T="PlanningEmployee" Items="_employeesOfDepartment"
+                                              ItemDropped="PlanEmployee"
+                                              ItemDisabled="@(item => item.TimesGenerated >= 6)"
+                                              ItemsSelector="@((item, plannedDropzone) => item.Identifier.ToString() == plannedDropzone)"
+                                              Class="d-flex flex-wrap flex-grow-1 pa-2 justify-space-around">
+                                <ChildContent>
+                                    <MudDropZone Style="width: 175px;background-color: rgb(30,30,30);"
+                                                 CanDrop="@(item => false)" NoDropClass="mud-border-error"
+
+                                                 T="PlanningEmployee" Identifier="Not Planned"
+                                                 Class="rounded py-2 px-3 ma-2"
+                                    >
+                                        <MudPaper Elevation="5" Style="border: 2px solid rgb(30,30,30)"
+                                                  Class="pa-2 mt-2 mb-4">
+                                            <MudText Align="Align.Center"
+                                                     Typo="Typo.h6">Not Planned
+                                            </MudText>
+                                        </MudPaper>
+                                    </MudDropZone>
+                                    @* Generate workdays *@
+                                    @foreach (PlanningWorkDay workDay in shift.WorkDays)
+                                    {
+                                        <MudPaper Elevation="10" Class="ma-2 pa-1">
+                                            <MudDropZone Style="width: 165px;" T="PlanningWorkDay"
+                                                         Identifier="@workDay.Date.ToString("d")"
+                                                         Class="rounded pa-1 ma-1">
+
+                                                <MudPaper Elevation="6" Style="border: 2px solid rgb(30,30,30)"
+                                                          Class="pa-2 mb-4">
+                                                    <MudText Align="Align.Center"
+                                                             Typo="Typo.h6">@workDay.Date.ToString("d")</MudText>
+                                                </MudPaper>
+
+                                                <MudDropContainer T="PlanningWorkPost" AllowReorder="false"
+                                                                  Items="workDay.Workposts">
+                                                    <ChildContent>
+                                                        @foreach (PlanningWorkPost workPost in workDay.Workposts)
+                                                        {
+                                                            <MudPaper Style="min-height: 40px" Elevation="2"
+                                                                      Class="pa-1 px-4 my-2 mud-background-gray d-flex align-center">
+                                                                <MudText Typo="Typo.button">@workPost.Name</MudText>
+                                                            </MudPaper>
+
+                                                            <MudDropZone
+                                                                Style="min-height: 60px;border: 1px solid rgb(30,30,30);padding: 0"
+                                                                CanDropClass="mud-border-success"
+                                                                NoDropClass="mud-border-error"
+                                                                Identifier="@GenerateIdentifier(line.Name, shift.Name, workDay.Date.ToString("d"), workPost.Name)"
+                                                                T="PlanningEmployee"
+                                                                ItemDisabled="@(item => item.Identifier.LineName != "Not Planned")"
+                                                                CanDrop="@(item => EmployeeCanBePlanned(item, workPost, workDay, _planning))"
+                                                                Class="rounded px-1 mud-background-gray">
+                                                                <MudDropContainer Class="mud-background-gray"
+                                                                                  T="PlanningEmployee"
+                                                                                  Items="@workPost.Employee">
+                                                                    <ItemRenderer>
+                                                                        <MudPaper Style="background-color: #eb6d0f; height: 40px"
+                                                                                  Class="pa-1 px-3 my-2 d-flex flex-row align-center">
+                                                                            <MudText Typo="Typo.button">@context.FirstName</MudText>
+                                                                            <MudText Class="ml-2 " Typo="Typo.button">@context.LastName[0].</MudText>
+                                                                            @if (@context.Identifier.LineName != "Not Planned")
+                                                                            {
+                                                                                <MudIconButton Style="position: absolute;right: 10px"
+                                                                                               Icon="@Icons.Material.Filled.Delete"
+                                                                                               Color="Color.Dark" Size="Size.Small"
+                                                                                               OnClick="@(() => RemoveFromPlanning(context))"
+                                                                                />
+                                                                            }
+                                                                        </MudPaper>
+                                                                    </ItemRenderer>
+                                                                </MudDropContainer>
+                                                            </MudDropZone>
+                                                        }
+                                                    </ChildContent>
+                                                </MudDropContainer>
+                                            </MudDropZone>
+                                        </MudPaper>
+                                    }
+                                </ChildContent>
+                                <ItemRenderer>
+                                    @if (@context.TimesGenerated <= _workDaysOfWeek.Count)
+                                    {
+                                        <MudPaper Style="background-color: #eb6d0f; height: 40px"
+                                                  Class="pa-1 px-3 my-2 d-flex flex-row align-center">
+                                            <MudText Typo="Typo.button">@context.FirstName</MudText>
+                                            <MudText Class="ml-2 " Typo="Typo.button">@context.LastName[0].</MudText>
+                                            @if (@context.Identifier.LineName != "Not Planned")
+                                            {
+                                                <MudIconButton Style="position: absolute;right: 10px"
+                                                               Icon="@Icons.Material.Filled.Delete"
+                                                               Color="Color.Dark" Size="Size.Small"
+                                                               OnClick="@(() => RemoveFromPlanning(context))"
+                                                />
+                                            }
+                                        </MudPaper>
+                                    }
+                                    else if (@context.TimesGenerated > _workDaysOfWeek.Count)
+                                    {
+                                        <MudPaper Style="background-color: #eb6d0f; opacity: 0.3; height: 40px"
+                                                  Class="pa-1 px-3 my-2 d-flex flex-row align-center">
+                                            <MudText Typo="Typo.button">@context.FirstName</MudText>
+                                            <MudText Class="ml-2 " Typo="Typo.button">@context.LastName[0].</MudText>
+                                        </MudPaper>
+                                    }
+                                </ItemRenderer>
+                            </MudDropContainer>
+                        </MudTabPanel>
+                    }
+                </MudTabs>
+            </MudTabPanel>
+        }
+    </MudTabs>
+    @if (SelectedWeek >= ThisWeek && SelectedYear >= ThisYear && !IsSaved)
+    {
+        <MudContainer Style="bottom: 25px;position:  fixed; width:auto;right: 0">
+            <MudTooltip Placement="Placement.Left" Text="Save Planning">
+                <MudFab OnClick="() => SavePlanning(_planning)" StartIcon="@Icons.Material.Rounded.Save"
+                        Size="Size.Medium"
+                        Color="IsSaved ? Color.Dark : Color.Secondary"/>
+            </MudTooltip>
+        </MudContainer>
+    }
+}
