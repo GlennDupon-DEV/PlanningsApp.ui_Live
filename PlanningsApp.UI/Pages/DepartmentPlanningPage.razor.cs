@@ -1,10 +1,7 @@
 using System.Globalization;
-using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
-using PlanningsApp.UI.Models;
 using PlanningsApp.UI.Models.PlanningModels;
-using PlanningsApp.UI.Services;
 using PlanningsApp.UI.Services.Interfaces;
 
 namespace PlanningsApp.UI.Pages;
@@ -16,7 +13,6 @@ public partial class DepartmentPlanningPage : ComponentBase
     private List<PlanningLine> _linesOfDepartment;
     private List<PlanningShift> _shifts;
     private List<PlanningWorkDay> _workDaysOfWeek = new();
-    private List<PlanningWorkPost> _workPostsOfLine;
 
     // Mocked data
     private DepartmentPlanning _planning = new();
@@ -50,20 +46,22 @@ public partial class DepartmentPlanningPage : ComponentBase
 
     protected override async Task OnParametersSetAsync()
     {
+        _isLoading = true;
+        StateHasChanged();
         _linesOfDepartment = await LineService.GetLinesByDepartmentNameAsync(DepartmentName);
         _shifts = await ShiftService.GetShiftsAsync();
         await LoadPlanningForCurrentPeriodAsync();
         Console.Write(SelectedWeek);
         Console.Write(SelectedYear);
         Console.Write(IsNewPlanning);
-        InvokeAsync(StateHasChanged);
+        await InvokeAsync(StateHasChanged);
+        _isLoading = false;
     }
 
     private async Task LoadPlanningForCurrentPeriodAsync()
     {
         try
         {
-            _isLoading = true;
             _employeesOfDepartment = await EmployeeService.GetEmployeesByDerpartmentNameAsync(
                 DepartmentName
             );
@@ -94,9 +92,9 @@ public partial class DepartmentPlanningPage : ComponentBase
         }
         finally
         {
-            _isLoading = false;
             IsSaved = true;
-            InvokeAsync(StateHasChanged);
+            await InvokeAsync(StateHasChanged);
+            ;
             Console.WriteLine(_employeesOfDepartment);
         }
     }
@@ -240,7 +238,8 @@ public partial class DepartmentPlanningPage : ComponentBase
         dropItem.Item.Identifier = newIdentifier;
         UpdatePlanning(dropItem.Item, "add");
         CreateNewDropItem(dropItem.Item);
-        InvokeAsync(StateHasChanged);
+        await InvokeAsync(StateHasChanged);
+        ;
     }
 
     private void CreateNewDropItem(PlanningEmployee dropItem)
@@ -262,7 +261,8 @@ public partial class DepartmentPlanningPage : ComponentBase
                 await PlanningService.UpdatePlanningAsync(planning);
             IsNewPlanning = false;
             IsSaved = true;
-            InvokeAsync(StateHasChanged);
+            await InvokeAsync(StateHasChanged);
+            ;
             Snackbar.Add("Planning saved.", Severity.Success);
         }
         catch (Exception e)
