@@ -56,6 +56,7 @@ public partial class DepartmentPlanningPage : ComponentBase
         Console.Write(SelectedWeek);
         Console.Write(SelectedYear);
         Console.Write(IsNewPlanning);
+        InvokeAsync(StateHasChanged);
     }
 
     private async Task LoadPlanningForCurrentPeriodAsync()
@@ -95,7 +96,7 @@ public partial class DepartmentPlanningPage : ComponentBase
         {
             _isLoading = false;
             IsSaved = true;
-            StateHasChanged();
+            InvokeAsync(StateHasChanged);
             Console.WriteLine(_employeesOfDepartment);
         }
     }
@@ -239,7 +240,7 @@ public partial class DepartmentPlanningPage : ComponentBase
         dropItem.Item.Identifier = newIdentifier;
         UpdatePlanning(dropItem.Item, "add");
         CreateNewDropItem(dropItem.Item);
-        StateHasChanged();
+        InvokeAsync(StateHasChanged);
     }
 
     private void CreateNewDropItem(PlanningEmployee dropItem)
@@ -261,7 +262,7 @@ public partial class DepartmentPlanningPage : ComponentBase
                 await PlanningService.UpdatePlanningAsync(planning);
             IsNewPlanning = false;
             IsSaved = true;
-            StateHasChanged();
+            InvokeAsync(StateHasChanged);
             Snackbar.Add("Planning saved.", Severity.Success);
         }
         catch (Exception e)
